@@ -1,19 +1,21 @@
 # desarrollo de codigo de proyectos
 
 ## codigo de taller #1
-**LoteriaSuper.java **
+**LoteriaSuper.java**
+
+
 Un supermercado realiza una tómbola con todos los clientes, si son hombres tienen que sacar
 de una canasta una bolita la cual tiene un número grabado y si son mujeres lo mismo pero de
 otra canasta, los premios se dan bajo la siguiente tabla:
 HOMBRES 
-# Bolita   Premio 
+ Bolita   Premio 
 1          Desodorante 
 2          Six-Pack de cerveza 
 3          Camiseta 
 4          Pantaloneta 
 5          Sudadera 
 MUJERES
- # bolita   Premio
+  bolita   Premio
 1           Loción 
 2           Bikini 
 3           Crema para la cara 
