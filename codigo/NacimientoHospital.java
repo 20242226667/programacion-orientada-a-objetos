@@ -9,13 +9,14 @@ import java.util.Scanner;
 public class NacimientoHospital {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int i=1,hombres=0 ,mujeres=0 ;
+        int i=0,hombres=0 ,mujeres=0 ;
         System.out.println("ingrese la cantidad de recien nacidos : ");
         int rn=sc.nextInt();
+        sc.nextLine();
         String nacidos []=new String[rn];
         String sexo1 []=new String[rn];
-        sc.nextLine();
-        while (i<=rn) {
+        
+        while (i<rn) {
             System.out.println("Ingrese el sexo del recien nacido "+i);
             System.out.println("F o M");
             String sexo=sc.nextLine();
@@ -35,10 +36,10 @@ public class NacimientoHospital {
             }
 
         }
-        System.out.println("cantidad de recien nacidos hombres :"+hombres+"  mujeres "+mujeres);
-        i=1;
-        while (i<=rn) {
-            System.out.println("recien nacido :"+i+"nombre :"+nacidos[i]+"   sexo :"+sexo1[i]);
+        System.out.println("cantidad de recien nacidos hombres :   "+hombres+"      mujeres :  "+mujeres);
+        i=0;
+        while (i<rn) {
+            System.out.println("recien nacido :   "+i+"  nombre :   "+nacidos[i]+"   sexo :   "+sexo1[i]);
             i++;
         }
 
