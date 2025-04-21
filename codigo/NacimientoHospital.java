@@ -39,7 +39,7 @@ public class NacimientoHospital {
         System.out.println("cantidad de recien nacidos hombres :   "+hombres+"      mujeres :  "+mujeres);
         i=0;
         while (i<rn) {
-            System.out.println("recien nacido :   "+i+"  nombre :   "+nacidos[i]+"   sexo :   "+sexo1[i]);
+            System.out.println("recien nacido :   "+(i+1)+"  nombre :   "+nacidos[i]+"   sexo :   "+sexo1[i]);
             i++;
         }
 
