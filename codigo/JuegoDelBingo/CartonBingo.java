@@ -10,7 +10,7 @@ public class CartonBingo implements ICarton {
         rellenarCarton();
     }
 
-    @Override
+
     public void rellenarCarton() {
         int count = 0;
         while (count < 15) {
@@ -29,9 +29,8 @@ public class CartonBingo implements ICarton {
         }
     }
 
-    @Override
     public boolean comprobarNumero(int numero) {
-        for (int i = 0; i < numeros.length; i++) {
+        for (int i = 0; i < numeros.length; i++) {// numeros.length: es para saber cuántas columnas hay en una fila
             if (numeros[i] == numero) {
                 tachados[i] = true;
                 return true;
@@ -40,7 +39,7 @@ public class CartonBingo implements ICarton {
         return false;
     }
 
-    @Override
+
     public boolean estaCompleto() {
         for (boolean t : tachados) {
             if (!t) return false;
@@ -48,7 +47,7 @@ public class CartonBingo implements ICarton {
         return true;
     }
 
-    @Override
+  
     public void mostrarCarton() {
         for (int i = 0; i < numeros.length; i++) {
             if (tachados[i]) {
